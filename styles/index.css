@@ -9,6 +9,10 @@
   --font-size: 1rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-primary);
   background-color: var(--cream);
@@ -25,7 +29,7 @@ body {
 h1 {
   font-family: var(--font-secondary);
   font-size: xx-large;
-  margin: 1.3rem 1.3rem 1.3rem 1.3rem;
+  margin: 0;
 }
 
 h3 {
@@ -35,8 +39,7 @@ h3 {
 
 p {
   font-size: var(--font-size);
-  margin: 1.2rem 1.2rem 1.2rem 1.2rem;
-  padding: 1;
+  line-height: 1.9rem;
   color: var(--dark-grayish-blue);
 }
 
@@ -81,8 +84,8 @@ img {
 
 .card {
   display: flex;
-  width: 34rem;
-  min-height: 30rem;
+  width: 35rem;
+  max-height: 30rem;
   border-radius: 1rem;
   background-color: var(--white);
 }
@@ -90,7 +93,8 @@ img {
 .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin: 1rem 1rem 0rem 2rem;
 }
 
 .precio-actual {
@@ -141,9 +145,5 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     width: 22rem;
-  }
-  .precios {
-    width: 20rem;
-    text-align: left;
   }
 }/*# sourceMappingURL=index.css.map */
