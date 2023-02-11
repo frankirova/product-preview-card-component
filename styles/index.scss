@@ -80,7 +80,6 @@ img {
   display: flex;
 
   width: 38rem;
-  max-height: 30rem;
 
   border-radius: 1rem;
   background-color: var(--white);
@@ -108,7 +107,7 @@ img {
   margin-left: 1rem;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 660px) {
   body {
     background-color: var(--cream);
   }
@@ -139,7 +138,8 @@ img {
   }
   .card {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     width: 22rem;
